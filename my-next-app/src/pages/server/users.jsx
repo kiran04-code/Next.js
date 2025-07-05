@@ -15,8 +15,7 @@ const user = (props) => {
   )
 }
 export const getServerSideProps = async()=>{
-  console.log("task is Going  on  server ")
-  const data = await  fetch("https://dummyjson.com/user")
+  const data = await  fetch("https://dummyjson.com/users")
   const datas = await data.json()
   return{
     props:{

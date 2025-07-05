@@ -10,7 +10,7 @@ const profile = (props) => {
   )
 }
 export const getServerSideProps = async()=>{
-    const data = (await fetch(`https://dummyjson.com/user${id}`)).json()
+    const data = await fetch(`https://dummyjson.com/user${id}`).json()
     return{
         props:{
             data
